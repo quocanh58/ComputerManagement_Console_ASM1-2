@@ -28,7 +28,7 @@ namespace ProductManagement_ConsoleApplication
             }
             return max;
         }
-        public List<Product> getListSinhVien()
+        public List<Product> getListProduct()
         {
             return listProducts;
         }
@@ -115,7 +115,7 @@ namespace ProductManagement_ConsoleApplication
 
             Console.Write("Enter quantity: ");
             int quantity = Convert.ToInt32(Console.ReadLine());
-            while (quantity <= 0)
+            while (quantity < 0)
             {
                 Console.Write("Re-Enter quantity: ");
                 quantity = Convert.ToInt32(Console.ReadLine());
@@ -277,22 +277,6 @@ namespace ProductManagement_ConsoleApplication
             }
         }
 
-        public bool CheckExist(int id)
-        {
-            bool flag = true;
-            Product product = FindProductByID(id);
-            if (product.ProductQuatity == 0)
-            {
-                Console.WriteLine("Product isn't stocking");
-                return false;
-            }
-            else
-            {
-                Console.WriteLine("Product is stocking");
-                flag = false;
-            }
-            return flag;
-        }
 
     }
 }

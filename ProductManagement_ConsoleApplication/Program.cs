@@ -30,11 +30,10 @@ public class ProductManagement_ConsoleApplication
             Console.WriteLine("**  6. Show list product.                            **");
             Console.WriteLine("**  7. Show list cost of product EURPOE.             **");
             Console.WriteLine("**  8. Show list cost of product ARFICA.             **");
-            Console.WriteLine("**  8. Check product in stock.                       **");
+            Console.WriteLine("**  9. Check product in stock.                       **");
             Console.WriteLine("**  0. Exit                                          **");
             Console.WriteLine("*******************************************************");
             Console.Write("Enter your choice: ");
-
 
             try
             {
@@ -96,7 +95,7 @@ public class ProductManagement_ConsoleApplication
                         {
                             Console.WriteLine("\n5. Sort lis product by Price (asdescending)");
                             productManager.SortByPrice();
-                            productManager.ShowProduct(productManager.getListSinhVien());
+                            productManager.ShowProduct(productManager.getListProduct());
                         }
                         else
                         {
@@ -107,7 +106,7 @@ public class ProductManagement_ConsoleApplication
                         if (productManager.CountProduct() > 0)
                         {
                             Console.WriteLine("\n6. Show list product.");
-                            productManager.ShowProduct(productManager.getListSinhVien());
+                            productManager.ShowProduct(productManager.getListProduct());
                             int count = productManager.CountProduct();
                             Console.WriteLine("Total: " + count + " product(s)");
                         }
@@ -121,6 +120,27 @@ public class ProductManagement_ConsoleApplication
                         break;
                     case 8:
                         productManager.ShowLisCostARF();
+                        break;
+                    case 9:
+                        if (productManager.CountProduct() > 0)
+                        {
+                            Console.Write("Enter name product to checking: ");
+                            int id = Convert.ToInt32(Console.ReadLine());
+                            Product product = productManager.FindProductByID(id);
+                            if (product.ProductQuatity == 0)
+                            {
+                                Console.WriteLine("Product has ID " + product.ProductId + " not stocking !");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Product has ID " + product.ProductId + " stock " 
+                                                                     + product.ProductQuatity + " product(s)");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("List product is empty !!");
+                        }
                         break;
                     case 0:
                         Console.WriteLine("\nYou have exited the program...");

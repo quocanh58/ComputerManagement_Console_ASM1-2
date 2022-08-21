@@ -35,6 +35,7 @@ namespace ProductObject
                    "\tQuantity: " + ProductQuatity;
         }
         public abstract double CalculatorCost();
+
         public virtual void DisplayInfo()
         {
             Console.Write("Product " + ProductName + " has ID: " + ProductId);
