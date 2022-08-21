@@ -1,0 +1,12 @@
+D:\VisualStudio_SourceCode\PRN_Block_3W\ASM_1&2_Block3W\Assignment_1-2_Block3W\ProductObject\bin\Debug\net6.0\ProductObject.deps.json
+D:\VisualStudio_SourceCode\PRN_Block_3W\ASM_1&2_Block3W\Assignment_1-2_Block3W\ProductObject\bin\Debug\net6.0\ProductObject.dll
+D:\VisualStudio_SourceCode\PRN_Block_3W\ASM_1&2_Block3W\Assignment_1-2_Block3W\ProductObject\bin\Debug\net6.0\ProductObject.pdb
+D:\VisualStudio_SourceCode\PRN_Block_3W\ASM_1&2_Block3W\Assignment_1-2_Block3W\ProductObject\obj\Debug\net6.0\ProductObject.csproj.AssemblyReference.cache
+D:\VisualStudio_SourceCode\PRN_Block_3W\ASM_1&2_Block3W\Assignment_1-2_Block3W\ProductObject\obj\Debug\net6.0\ProductObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\VisualStudio_SourceCode\PRN_Block_3W\ASM_1&2_Block3W\Assignment_1-2_Block3W\ProductObject\obj\Debug\net6.0\ProductObject.AssemblyInfoInputs.cache
+D:\VisualStudio_SourceCode\PRN_Block_3W\ASM_1&2_Block3W\Assignment_1-2_Block3W\ProductObject\obj\Debug\net6.0\ProductObject.AssemblyInfo.cs
+D:\VisualStudio_SourceCode\PRN_Block_3W\ASM_1&2_Block3W\Assignment_1-2_Block3W\ProductObject\obj\Debug\net6.0\ProductObject.csproj.CoreCompileInputs.cache
+D:\VisualStudio_SourceCode\PRN_Block_3W\ASM_1&2_Block3W\Assignment_1-2_Block3W\ProductObject\obj\Debug\net6.0\ProductObject.dll
+D:\VisualStudio_SourceCode\PRN_Block_3W\ASM_1&2_Block3W\Assignment_1-2_Block3W\ProductObject\obj\Debug\net6.0\refint\ProductObject.dll
+D:\VisualStudio_SourceCode\PRN_Block_3W\ASM_1&2_Block3W\Assignment_1-2_Block3W\ProductObject\obj\Debug\net6.0\ProductObject.pdb
+D:\VisualStudio_SourceCode\PRN_Block_3W\ASM_1&2_Block3W\Assignment_1-2_Block3W\ProductObject\obj\Debug\net6.0\ref\ProductObject.dll
