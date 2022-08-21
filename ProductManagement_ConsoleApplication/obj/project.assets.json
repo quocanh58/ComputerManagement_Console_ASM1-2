@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ProductManagement_ConsoleApplication\\ProductManagement_ConsoleApplication.csproj",
+      "projectUniqueName": "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ComputerManagement_Console_ASM1-2\\ProductManagement_ConsoleApplication\\ProductManagement_ConsoleApplication.csproj",
       "projectName": "ProductManagement_ConsoleApplication",
-      "projectPath": "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ProductManagement_ConsoleApplication\\ProductManagement_ConsoleApplication.csproj",
+      "projectPath": "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ComputerManagement_Console_ASM1-2\\ProductManagement_ConsoleApplication\\ProductManagement_ConsoleApplication.csproj",
       "packagesPath": "C:\\Users\\at050\\.nuget\\packages\\",
-      "outputPath": "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ProductManagement_ConsoleApplication\\obj\\",
+      "outputPath": "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ComputerManagement_Console_ASM1-2\\ProductManagement_ConsoleApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,8 +59,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ProductObject\\ProductObject.csproj": {
-              "projectPath": "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ProductObject\\ProductObject.csproj"
+            "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ComputerManagement_Console_ASM1-2\\ProductObject\\ProductObject.csproj": {
+              "projectPath": "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ComputerManagement_Console_ASM1-2\\ProductObject\\ProductObject.csproj"
             }
           }
         }

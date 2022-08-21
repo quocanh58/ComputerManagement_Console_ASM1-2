@@ -10,6 +10,8 @@ namespace ProductManagement_ConsoleApplication.Reponsitory
     public class ProductReponsitory : IProductReponsitory
     {
         List<Product> ListPrducts = null;
+
+        IProductReponsitory _product;
         public ProductReponsitory()
         {
             ListPrducts = new List<Product>();
@@ -56,17 +58,21 @@ namespace ProductManagement_ConsoleApplication.Reponsitory
 
         bool IProductReponsitory.DeleteById(int ID)
         {
-            throw new NotImplementedException();
+            if (this._product.DeleteById(ID))
+            {
+                return true;
+            }
+            return false;
         }
 
         Product IProductReponsitory.FindByID(int ID)
         {
-            throw new NotImplementedException();
+            return this._product.FindByID(ID);
         }
 
         List<Product> IProductReponsitory.FindByName(string keyword)
         {
-            throw new NotImplementedException();
+            return _product.FindByName(keyword);
         }
 
         //ID product auto increases
@@ -111,12 +117,12 @@ namespace ProductManagement_ConsoleApplication.Reponsitory
 
         void IProductReponsitory.SortByPrice()
         {
-            throw new NotImplementedException();
+            _product.getListSinhVien().Sort();
         }
 
         void IProductReponsitory.UpdateProduct(int ID)
         {
-            throw new NotImplementedException();
+            //
         }
     }
 }

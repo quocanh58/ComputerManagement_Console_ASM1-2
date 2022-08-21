@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ProductObject\\ProductObject.csproj": {}
+    "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ComputerManagement_Console_ASM1-2\\ProductObject\\ProductObject.csproj": {}
   },
   "projects": {
-    "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ProductObject\\ProductObject.csproj": {
+    "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ComputerManagement_Console_ASM1-2\\ProductObject\\ProductObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ProductObject\\ProductObject.csproj",
+        "projectUniqueName": "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ComputerManagement_Console_ASM1-2\\ProductObject\\ProductObject.csproj",
         "projectName": "ProductObject",
-        "projectPath": "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ProductObject\\ProductObject.csproj",
+        "projectPath": "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ComputerManagement_Console_ASM1-2\\ProductObject\\ProductObject.csproj",
         "packagesPath": "C:\\Users\\at050\\.nuget\\packages\\",
-        "outputPath": "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ProductObject\\obj\\",
+        "outputPath": "D:\\VisualStudio_SourceCode\\PRN_Block_3W\\ASM_1&2_Block3W\\Assignment_1-2_Block3W\\ComputerManagement_Console_ASM1-2\\ProductObject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
