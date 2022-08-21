@@ -35,13 +35,13 @@ namespace ProductManagement_ConsoleApplication
 
         public void ShowProduct(List<Product> listProduct)
         {
-            Console.WriteLine("{0, -5} {1, -20} {2, -8} {3, -25} {4, -10} {5, -10} {6, -5}",
+            Console.WriteLine("{0, -5} {1, -20} {2, -13} {3, -21} {4, -10} {5, -10} {6, -5}",
                   "ID", "Name", "Type", "DateInput", "Price", "Country", "Quantity");
             if (listProduct != null && listProduct.Count > 0)
             {
                 foreach (Product product in listProduct)
                 {
-                    Console.WriteLine("{0, -5} {1, -20} {2, -8} {3, -25} {4, -10} {5, -10} {6, -5}",
+                    Console.WriteLine("{0, -5} {1, -20} {2, -13} {3, -21} {4, -10} {5, -10} {6, -5}",
                                       product.ProductId, product.ProductName, product.ProductType,
                                       product.ProductDate, product.ProductPrice,
                                       product.ProductCountry == 1 ? "EUROPE" : "ARFICA", product.ProductQuatity);
@@ -105,10 +105,22 @@ namespace ProductManagement_ConsoleApplication
             product.ProductDate = str;
 
             Console.Write("Enter price of product: ");
-            product.ProductPrice = Convert.ToDouble(Console.ReadLine());
+            double price = Convert.ToDouble(Console.ReadLine());
+            while (price <= 0)
+            {
+                Console.Write("Re-Enter Price: ");
+                price = Convert.ToInt32(Console.ReadLine());
+            }
+            product.ProductPrice = price;
 
             Console.Write("Enter quantity: ");
-            product.ProductQuatity = Convert.ToInt32(Console.ReadLine());
+            int quantity = Convert.ToInt32(Console.ReadLine());
+            while (quantity <= 0)
+            {
+                Console.Write("Re-Enter quantity: ");
+                quantity = Convert.ToInt32(Console.ReadLine());
+            }
+            product.ProductQuatity = quantity;
 
             if (listProducts != null && listProducts.Count > 0)
             {
@@ -155,7 +167,7 @@ namespace ProductManagement_ConsoleApplication
         }
 
         //Find product by id
-        private Product FindProductByID(int id)
+        public Product FindProductByID(int id)
         {
             Product productFind = null;
             if (listProducts != null && listProducts.Count > 0)
@@ -193,10 +205,9 @@ namespace ProductManagement_ConsoleApplication
         public void UpdateProduct(int id)
         {
             Product product = FindProductByID(id);
-
             if (product != null)
             {
-                Console.WriteLine("Enter name product: ");
+                Console.Write("Enter name product: ");
                 string name = Convert.ToString(Console.ReadLine());
                 if (name != null && name.Length > 0)
                 {
@@ -210,7 +221,7 @@ namespace ProductManagement_ConsoleApplication
                     product.ProductType = type;
                 }
 
-                Console.Write("Enter date input of product: ");
+                Console.Write("Enter date input of product (MM DD YYYY): ");
                 DateTime dt = DateTime.Parse(Console.ReadLine());
                 string str = dt.ToString("yyyy MMMM dd");
                 if (str != null && str.Length > 0)
@@ -218,21 +229,21 @@ namespace ProductManagement_ConsoleApplication
                     product.ProductDate = str;
                 }
 
-                Console.WriteLine("Enter pirce product: ");
+                Console.Write("Enter pirce product: ");
                 string price = Convert.ToString(Console.ReadLine());
                 if (price != null && price.Length > 0)
                 {
                     product.ProductPrice = Convert.ToDouble(price);
                 }
 
-                Console.WriteLine("Enter Country product: ");
+                Console.Write("Enter Country product: ");
                 string country = Convert.ToString(Console.ReadLine());
                 if (country != null && country.Length > 0)
                 {
                     product.ProductCountry = Convert.ToInt32(country);
                 }
 
-                Console.WriteLine("Enter quantity product: ");
+                Console.Write("Enter quantity product: ");
                 string quantity = Convert.ToString(Console.ReadLine());
                 if (name != null && name.Length > 0)
                 {
@@ -265,5 +276,23 @@ namespace ProductManagement_ConsoleApplication
                 }
             }
         }
+
+        public bool CheckExist(int id)
+        {
+            bool flag = true;
+            Product product = FindProductByID(id);
+            if (product.ProductQuatity == 0)
+            {
+                Console.WriteLine("Product isn't stocking");
+                return false;
+            }
+            else
+            {
+                Console.WriteLine("Product is stocking");
+                flag = false;
+            }
+            return flag;
+        }
+
     }
 }

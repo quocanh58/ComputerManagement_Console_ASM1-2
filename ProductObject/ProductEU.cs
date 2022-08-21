@@ -18,7 +18,7 @@ namespace ProductObject
         public override void DisplayInfo()
         {
             base.DisplayInfo();
-            Console.WriteLine("Cost of product EU: " + CalculatorCost());
+            Console.WriteLine(" >> Cost of product EU: " + CalculatorCost());
         }
     }
 }

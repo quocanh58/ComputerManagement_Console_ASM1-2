@@ -17,7 +17,7 @@ namespace ProductObject
         public override void DisplayInfo()
         {
             base.DisplayInfo();
-            Console.WriteLine("Cost of product AFC: " + CalculatorCost());
+            Console.WriteLine(" >> Cost of product AFC: " + CalculatorCost());
         }
     }
 }
