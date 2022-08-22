@@ -20,29 +20,7 @@ namespace ProductManagement_ConsoleApplication.Reponsitory
         // Add new product
         void IProductReponsitory.AddProduct()
         {
-            Product product = new ProductEU();
-
-            product.ProductId = GenerateID();
-
-            Console.Write("Enter name product: ");
-            product.ProductName = Convert.ToString(Console.ReadLine());
-
-            Console.Write("Enter type of product:(1.Laptop - 2.Desktop): ");
-            product.ProductType = Convert.ToString(Console.ReadLine());
-
-            Console.Write("Enter date input of product: ");
-            //product.ProductDate = DateTime.Parse(Console.ReadLine());
-
-            Console.Write("Enter price of product: ");
-            product.ProductPrice = Convert.ToDouble(Console.ReadLine());
-
-            Console.Write("Enter country of product (1.EUROPE - 2.Africa): ");
-            product.ProductCountry = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("Enter quantity: ");
-            product.ProductQuatity = Convert.ToInt32(Console.ReadLine());
-
-            ListPrducts.Add(product);
+            this._product.AddProduct();
         }
 
         // Return quantity products at present.

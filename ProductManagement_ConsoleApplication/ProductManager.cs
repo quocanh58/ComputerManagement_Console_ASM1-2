@@ -99,7 +99,7 @@ namespace ProductManagement_ConsoleApplication
             }
             product.ProductType = checkType;
 
-            Console.Write("Enter date input of product: ");
+            Console.Write("Enter date input of product (MM DD YYYY): ");
             DateTime dt = DateTime.Parse(Console.ReadLine());
             string str = dt.ToString("yyyy MMMM dd");
             product.ProductDate = str;

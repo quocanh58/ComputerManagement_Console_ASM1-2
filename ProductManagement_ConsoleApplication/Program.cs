@@ -129,12 +129,12 @@ public class ProductManagement_ConsoleApplication
                             Product product = productManager.FindProductByID(id);
                             if (product.ProductQuatity == 0)
                             {
-                                Console.WriteLine("Product has ID " + product.ProductId + " not stocking !");
+                                Console.WriteLine("Product has ID " + product.ProductId + " not stocking.");
                             }
                             else
                             {
                                 Console.WriteLine("Product has ID " + product.ProductId + " stock " 
-                                                                     + product.ProductQuatity + " product(s)");
+                                                                     + product.ProductQuatity + " product(s).");
                             }
                         }
                         else
